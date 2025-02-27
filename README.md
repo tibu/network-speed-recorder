@@ -15,8 +15,6 @@ brew install speedtest-cli
 uv pip install -r requirements.txt
 
 crontab -e
-*/5 * * * * cd /Users/tiborszentmarjay/Documents/git/network-speed-recorder && uv run network-speed-record.py
-
 */5 * * * * cd /Users/tiborszentmarjay/Documents/git/network-speed-recorder && /opt/homebrew/bin/uv run network-speed-record.py >> /Users/tiborszentmarjay/Documents/git/network-speed-recorder/error.log 2>&1
 
 
